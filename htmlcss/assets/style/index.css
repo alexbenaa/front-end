@@ -1,0 +1,206 @@
+/* -------------------------------------------------------------- */
+/* COLORS VINTAGE */
+.Vintage-Ralph-Lauren-1-hex { color: #703030; }
+.Vintage-Ralph-Lauren-2-hex { color: #2F343B; }
+.Vintage-Ralph-Lauren-3-hex { color: #7E827A; }
+.Vintage-Ralph-Lauren-4-hex { color: #E3CDA4; }
+.Vintage-Ralph-Lauren-5-hex { color: #C77966; }
+/* -------------------------------------------------------------- */
+/* FONTS */
+@font-face {
+	font-family:"playfair-display";
+	src:url("https://use.typekit.net/af/8babc2/00000000000000007735a120/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/8babc2/00000000000000007735a120/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/8babc2/00000000000000007735a120/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+	font-display:auto;font-style:italic;font-weight:700;
+}
+@font-face {
+	font-family:"viktor-script";
+	src:url("https://use.typekit.net/af/a221bb/00000000000000007735b203/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/a221bb/00000000000000007735b203/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/a221bb/00000000000000007735b203/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+	font-display:auto;font-style:normal;font-weight:400;
+}
+@font-face {
+	font-family:"shackleton-condensed";
+	src:url("https://use.typekit.net/af/695388/00000000000000007735bd06/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/695388/00000000000000007735bd06/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/695388/00000000000000007735bd06/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+	font-display:auto;font-style:normal;font-weight:400;
+	}
+/* -------------------------------------------------------------- */
+/* HEADER */
+.header{
+	width: 100%;
+	background-image: linear-gradient(to right, #4C4C59, #151B26);
+}
+.header .div-container{
+	width: 940px;
+	margin: 0 auto;
+	position: relative;
+	padding: 30px
+}
+.div-container .div-container__image--width{
+	width: 150px;
+	vertical-align: top;
+	display: inline-block;
+}
+.header .nav-bar{
+	display: inline;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.nav-bar .nav-bar__link{
+	display: inline;
+	margin:0 0 0 20px ;
+	font-family: "viktor-script";
+	font-size: 3em;
+	
+}
+.nav-bar .nav-bar__link a{
+	text-decoration: none;
+	color: white;
+}
+
+/* MAIN */
+/* 
+
+	######################ANOTAÇÕES##############################
+
+
+
+	.About p:not(#ID) -> Estrutura de negação, o único que não será aplicado o estilo ser[a o #ID
+
+	.About > p	->	Seleciona o primeiro p da classe ou Tag de preferência
+
+	.About ~ p	->	Seleciona todos os <p> dentro daquela classe ou seção.
+
+	width: calc(100% - 40px)	->	Fara um calculo da largura, para tornar o site mais expanssivo.
+
+	opacity:0.7;	->	Dá para utilizar opacity no animation e hover.
+
+	rgba(0,0,0,0.3)	->	Muda a opacidade das cores.
+
+	box-shadow: X Y BLUR EXPANSION COR, ADD OTHER SHADOW; ->	Maneira correta de se criar uma sombra.
+
+	box-shadow: inset;	->	Adicionando sombras internas ao elemento.
+
+	@midia (max-width:480px){NOVA ESTRUTURA DE ESTILO}
+
+*/
+.main{
+	width: 100%;
+	background-image: url(/assets/img/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.main .s-about{
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px;
+	color: white;
+	clear: left;
+	font-size: 1.5em;
+
+}
+.s-about .s-about__title{
+	color: white;
+	text-align: center;
+	font-size: 2em;
+	padding: 1em 0;
+	font-family: "viktor-script";
+}
+.s-about p:not(.s-about__text-2){
+	font-size: 1em;
+	font-family: "shackleton-condensed";
+	margin: 1em;
+}
+.s-about .s-about__text-2{
+	color: #f7bd71;
+	font-style: italic;
+}
+.s-about .s-about__text-1--color{
+	color: #f7bd71;
+}
+.s-about__text-2--color{
+	color: white;
+}
+.s-map .s-map__title{
+	font-size: 2em;
+	padding: 1em 0;
+	font-family: "viktor-script";
+	color: white;
+	text-align: center;
+}
+.main .s-map{
+	width: 940px;
+	margin: 0 auto;
+
+}
+.main .s-benefits{
+	width: 940px;
+	margin: 0 auto;
+	margin-top: 4em;
+}
+.s-benefits .s-benefits__image--width{
+	width: 60%;
+	display: inline-block;
+	border-radius: 20px;
+}
+.s-benefits .s-list{
+	display: inline-block;
+	width: 40%;
+	vertical-align: top;
+	font-family: "playfair-display";
+	color: white;
+	vertical-align: 50%;
+	transform: translateY(-50%);
+}
+.s-list .s-list__item{
+	font-family: "playfair-display";
+	margin:0 0 30px 0;
+	font-size: 25px;
+}
+/* FOOTER */
+.footer {
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 20px 0;
+	background-image: linear-gradient(to top, #4c4c59f3, #293141f3);
+}
+.footer .footer__text{	 
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+
+.footer .footer__image--width{
+	width: 70px;
+}
+/* MEDIA QUERY PARA 480PX */
+
+@media screen and (max-width:480px){
+	/* HEADER MOBILE */
+	.header{
+		background-image: linear-gradient(to bottom, #4c4c59f3, #aeb3bbf3);
+	}
+	.header .div-container,.main .s-about,.main .s-benefits, .main .s-map{
+		width: 100%;
+		text-align: center;
+		padding: 0;
+	}
+	.div-container .div-container__image--width{
+		width: 4em;
+		padding: 20px;
+	}
+	.div-container .nav-bar{
+		position: static;
+		padding:0 30px;
+		font-size: 10px;
+	}
+	/* MAIN MOBILE */
+	.main{
+		background-image: url(/assets/img/bg.jpg);
+		text-align: center;
+	}
+	/* MAPA */
+
+
+}

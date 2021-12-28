@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="/assets/style/reset.css">
+      <link rel="stylesheet" href="/assets/style/contato.css">
+      <title>Barbearia SR. Rodrigues - Contato</title>
+</head>
+<body>
+	<header>
+		<div class="HeaderContainer">
+			<h1><img src="/assets/img/cabelo_barba.png"></h1>
+
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="produtos.html">Produtos</a></li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+      <main>
+            <form action="">
+                  <!-- Entrada de Nome -->
+                  <fieldset class="InputPadrao">
+                        <label for="Name">Nome para contato: </label>
+                        <input type="text" id="Name" required>
+
+                        <!-- Entrada de E-mail -->
+                        <label for="Email">Informe seu e-mail: </label>
+                        <input type="email" id="Email" required>
+                        
+                        <!-- Entrada do telefone -->
+                        <label for="Phone">Informe seu Telefone</label>
+                        <input type="tel" id="Phone" placeholder="Ex: XX XXXXX-XXXX" required>
+                        
+                        <!-- Entrada de Mensagem do cliente -->
+                        <label for="Message">Deixe sua mensagem:</label>
+                        <textarea name="mensagem" id="Message" cols="60" rows="10"></textarea>
+                  </fieldset>
+                  <fieldset class="RadioForm">
+                        <!-- Entrada de seleção Radius -->
+                        <legend>Prefere nosso contato por:</legend>
+
+                        <label for="RadioEmail"><input type="radio" id="RadioEmail" name="contato" >E-mail</label><br>
+                        
+                        <label for="RadioPhone"><input type="radio" id="RadioPhone" name="contato" >Telefone</label><br>
+                        
+                        <label for="RadioWhatsapp"><input type="radio" id="RadioWhatsapp" name="contato" checked>WhatsApp</label><br>
+                        
+                  </fieldset>
+                  <fieldset class="DropDown">
+                        <legend>Selecione uma das opções:</legend>
+                        <select name="dropdown" id="DropDown">
+                              <option value="manha">Manhã</option>
+                              <option value="tarde">Tarde</option>
+                              <option value="noite">Noite</option>
+                        </select>
+                  </fieldset>
+                  <label for="Check"><input type="checkbox" class="CheckBox" checked>   Podemos adiciona-lo à nossa lista de transmissão ?</label><br>
+                  <input type="submit" value="Envia">
+            </form>
+            <table>
+                  <thead>
+                      <tr>
+                          <th>Dia</th>
+                          <th>Horário</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>Segunda</td>
+                          <td>8h ~ 20h</td>
+                      </tr>
+                      <tr>
+                          <td>Quarta</td>
+                          <td>8h ~ 20h</td>
+                      </tr>
+                      <tr>
+                          <td>Sexta</td>
+                          <td>8h ~ 20h</td>
+                      </tr>
+                  </tbody>
+              </table>
+      </main>
+      <footer>
+		<img src="/assets/img/cabelo_barba.png">
+		<p class="copyright">&copy; Copyright Barbearia Sr. Rodrigues - 2021</p>
+	</footer>
+</body>
+</html>
