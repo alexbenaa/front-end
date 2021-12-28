@@ -1,0 +1,148 @@
+.cabecalhoPrincipal .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .cabecalhoPrincipal-nav {
+    display: flex;
+}
+
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin-right: 5%;
+    justify-content: space-around;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}
+
+.rodapePrincipal-navMap .rodapePrincipal-navMap-list {
+    height: 260px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.conteudoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.conteudoPrincipal-cursos-link {
+    width: 23%;
+    margin: 1%;
+}
+
+.videoSobre .container {
+    display: flex;
+}
+
+.videoSobre-sobre {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+}
+
+.videoSobre-sobre-list {
+    flex-grow: 1;
+    
+}
+.container .videoSobre-video{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+@media (max-width:800px) {
+
+    /* HEADER */
+    .cabecalhoPrincipal .container {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .cabecalhoPrincipal-nav {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* MAIN */
+    .conteudoPrincipal-cursos {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .conteudoPrincipal-cursos-link {
+        width: 100%;
+    }
+
+    .rodapePrincipal-navMap .rodapePrincipal-navMap-list {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .rodapePrincipal-patrocinadores .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rodapePrincipal-contatoForm .rodapePrincipal-contatoForm-fieldset {
+        width: 100%;
+    }
+
+    .container .rodapePrincipal-patrocinadores-list {
+        width: 100%;
+    }
+
+    .cabecalhoPrincipal-nav-link-app {
+        order: -1;
+    }
+    .videoSobre .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .videoSobre-video{
+        margin: 0 auto;
+    }
+}
+
+/* 
+
+container:
+
+display: flex
+flex-direction
+justify-content
+flex-wrap
+flex-flow
+align-items
+align-content
+flex item:
+
+order
+flex-grow
+flex-shrink
+flex-basis
+flex
+align-self
+
+
+*/

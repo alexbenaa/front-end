@@ -1,0 +1,42 @@
+.header .h-container{
+      width: 940px;
+      height: 5em;
+      background-color: gray;
+      margin: 0 auto;
+}
+
+.h-nav-bar .h-nav-bar__title{
+      background-color: khaki;
+}
+.h-list .h-list__item1{
+      width: 5em;
+      height: 5em;
+      background-color: red;
+}
+.h-list .h-list__item2{
+      width: 5em;
+      height: 5em;
+      background-color:greenyellow ;
+}
+.h-list .h-list__item3{
+      width: 5em;
+      height: 5em;
+      background-color: hotpink;
+}
+.h-list .h-list__item4{
+      width: 5em;
+      height: 5em;
+      background-color: indigo;
+}
+
+.h-nav-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+.h-nav-bar .h-list{
+      display: flex;
+}
+.h-list__item1, .h-list__item2, .h-list__item3, .h-list__item4{
+      margin: 0 20px 0 0;
+}
